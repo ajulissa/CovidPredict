@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'DM Sans', sans-serif;
+    color: rgba(230, 235, 235, 0.97);
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url("https://tec.mx/sites/default/files/repositorio/Investigacion/5.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    backdrop-filter: blur(6px);
+}
+
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 7vh;
+    color: rgba(235, 235, 235, 0.9)
+}
+
+header {
+    margin-bottom: 2vh;
+    padding: 1vh 0;
+}
+
+#contenedor {
+    text-align: center;
+    align-items: center;
+    height: 86vh;
+    width: 100vw - 4vh;
+}
+
+#col1 {
+    float: left;
+}
+
+#col2 {
+    float: right;
+}
+
+.columna {
+    width: 45vw;
+    height: 66vh;
+    display: inline-block;
+    margin: 0 2vw;
+}
+
+.row h2 {
+    font-weight: lighter;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px;
+    transition: 0.4s;
+    margin: 7px 10px 15px;
+    border: 2px solid rgba(235, 235, 235, 0.9);
+    border-radius: 15px;
+    color: rgba(235, 235, 235, 0.9);
+    cursor: pointer;
+}
+
+.btn {
+    width: 38px;
+}
+
+.btn_contenido {
+    font-size: 14px;
+    padding: 9px;
+}
+
+#btn_otro {
+    float: right;
+    margin-right: 100px;
+    padding: 18px 9px;
+}
+
+a:hover {
+    background-color: #045975;
+    border-color: #045975;
+}
+
+
+/* .active {
+    background-color: red!important;
+} */
