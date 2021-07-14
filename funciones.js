@@ -17,6 +17,7 @@ var boton7_2 = document.querySelector("#rpta7_2");
 var boton8_1 = document.querySelector("#rpta8_1");
 var boton8_2 = document.querySelector("#rpta8_2");
 
+arr[7] = 0;
 
 boton1_1.addEventListener("click", function(evento) {
     boton1_2.style.background = "transparent";
@@ -102,25 +103,25 @@ boton7_2.addEventListener("click", function(evento) {
     arr[6] = 0;
     console.log("El arr ", arr);
 });
-// boton8_1.addEventListener("click", function(evento) {
-//     boton8_2.style.background = "transparent";
-//     this.style.background = "#080B59";
-//     arr[7] = 1;
-//     console.log("El arr ", arr);
-// });
-// boton8_2.addEventListener("click", function(evento) {
-//     boton8_1.style.background = "transparent";
-//     this.style.background = "#080B59";
-//     arr[7] = 0;
-//     console.log("El arr ", arr);
-// });
+boton8_1.addEventListener("click", function(evento) {
+    boton8_2.style.background = "transparent";
+    this.style.background = "#080B59";
+    arr[7] = 2;
+    console.log("El arr ", arr);
+});
+boton8_2.addEventListener("click", function(evento) {
+    boton8_1.style.background = "transparent";
+    this.style.background = "#080B59";
+    arr[7] = 1;
+    console.log("El arr ", arr);
+});
 
 
 // var btn1_1 = document.getElementById("rpta1-1");
 // var btn1_2 = document.getElementById("rpta1-2")
 
 // document.addEventListener('DOMContentLoaded', () => {
-//     document.querySelectorAll('a').forEach(boton => {
+//     document.querySelectorAll("button").forEach(boton => {
 //         boton.onclick = () => {
 //             // document.querySelector('#rpta1-1').style.background = '#080B59';
 
@@ -142,35 +143,4 @@ boton7_2.addEventListener("click", function(evento) {
 
 //         }
 //     });
-// });
-
-
-
-
-
-// var boton1 = document.getElementById("rpta1-1");
-// var boton2 = document.getElementById("rpta1-2");
-
-// document.getElementById("rpta1-1").addEventListener("click", function() {
-
-//     if (boton2.style.color != "#fff" && boton1.style.color != "#fff") {
-//         boton2.style.color == "#fff";
-//     }
-
-//     // if (boton1.style.backgroundColor=="#fff") {
-//     //     boton1.classList.toggle("active");
-//     // }
-
-// });
-
-// document.getElementById('rpta1-2').addEventListener("click", function() {
-
-//     if (boton1.classList.contains("active")) {
-//         boton1.classList.remove("active");
-//     }
-
-//     if (!boton2.classList.contains("active")) {
-//         boton2.classList.toggle("active");
-//     }
-
 // });
