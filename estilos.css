@@ -16,24 +16,45 @@ body {
     backdrop-filter: blur(6px);
 }
 
+header {
+    margin-bottom: 2vh;
+    padding: 1vh 0;
+    text-align: center;
+}
+
 header h1 {
     text-transform: uppercase;
     text-align: center;
     font-family: 'DM Sans', sans-serif;
-    font-size: 7vh;
+    font-size: 5.6vh;
     color: rgba(235, 235, 235, 0.9)
 }
 
-header {
-    margin-bottom: 2vh;
-    padding: 1vh 0;
+#indicaciones {
+    margin-top: 10px;
+    display: inline-block;
+    width: 80%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3vh;
+    text-align: center;
 }
 
 #contenedor {
+    margin-top: 20px;
     text-align: center;
     align-items: center;
-    height: 86vh;
+    height: 74vh;
     width: 100vw - 4vh;
+}
+
+@media (max-width: 1200px) {
+    #contenedor {
+        height: 63vh;
+    }
+    footer {
+        margin-bottom: 5px;
+        height: 23vh;
+    }
 }
 
 #col1 {
@@ -52,6 +73,7 @@ header {
 }
 
 .row h2 {
+    font-size: 1.5vw;
     font-weight: lighter;
 }
 
@@ -95,3 +117,44 @@ button:hover {
     background-color: #045975;
     border-color: #045975;
 }
+
+footer {
+    width: 15vw;
+    position: fixed;
+    left: 42.5vw;
+    bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    height: 12vh;
+}
+
+#resultado {
+    display: inline-block;
+    width: 14vw;
+    height: 6vh;
+    border-radius: 20px;
+    margin-top: 2px;
+    /* border: 2px solid blue; */
+    background-color: white;
+}
+
+#btn_calcular {
+    float: right;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 8px;
+    border: 4px solid white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#btn_calcular:hover {
+    background-color: #045975;
+    border-color: #045975;
+}
+
+@media (min-width: 1350px) {}

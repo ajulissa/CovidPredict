@@ -11,12 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
         <h1>Predicción de COVID-19 en base a 8 preguntas</h1>
+        <h3 id="indicaciones">Para conocer su resultado, seleccione el botón con la respuesta correspondiente a cada pregunta<br>Luego, pulse el botón inferior (check) para predecir su resultado</h3>
     </header>
 
     <main>
@@ -66,18 +68,23 @@
                     <button id="rpta7_2" class="btn_contenido">MUJER</button>
                 </div>
 
-                <div id="row4" clbuttonss="row">
-                    <h2>ADICIONAL</h2>
+                <div id="row4" class="row">
+                    <h2>ADICIONAL (opcional)</h2>
                     <button id="rpta8_1" class="btn_contenido">CONTACTO CON<br>INFECTADOS</button>
                     <button id="rpta8_2" class="btn_contenido">VIAJÓ AL<br>EXTRANJERO</button>
                 </div>
             </div>
-
-            <div>
-                <h3>RESULTADO</h3>
-            </div>
         </div>
+
+        <footer>
+            <h3>Resultado</h3>
+            <div id="resultado"></div>
+        </footer>
+
+        <img id="btn_calcular" src="transparent-check-icon-5db805b5b53aa6.4845664315723411737423.png" alt="check">
     </main>
+
+
     <script src="funciones.js"></script>
 </body>
 
