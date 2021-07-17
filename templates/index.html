@@ -6,19 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prediccion COVID</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <!-- <link rel="stylesheet" href="./../static/css/style.css"> -->
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
     <header>
         <h1>Predicción de COVID-19 en base a 8 preguntas</h1>
-        <h3 id="indicaciones">Para conocer su resultado, seleccione el botón con la respuesta correspondiente a cada pregunta<br>Luego, pulse el botón inferior (check) para predecir su resultado</h3>
+        <h3 id="indicaciones">Para conocer su resultado, seleccione el botón con la respuesta correspondiente a cada
+            pregunta<br>Luego, pulse el botón inferior (check) para predecir su resultado</h3>
     </header>
 
     <main>
@@ -78,14 +80,16 @@
 
         <footer>
             <h3>Resultado</h3>
-            <div id="resultado"></div>
-        </footer>
+            <div id="resultado">
+                <h4 id="textResult">
 
-        <img id="btn_calcular" src="check_transparente.png" alt="check">
+                </h4>
+            </div>
+        </footer>
+        <img id="btn_calcular" src="{{url_for('static', filename='images/check_transparente.png')}}" alt="check">
     </main>
 
-
-    <script src="funciones.js"></script>
+    <script src="{{url_for('static', filename='js/functions.js')}}"></script>
 </body>
 
 </html>

@@ -138,6 +138,11 @@ footer {
     background-color: white;
 }
 
+#textResult {
+    margin-top: 9px;
+    color: black;
+}
+
 #btn_calcular {
     float: right;
     position: fixed;
