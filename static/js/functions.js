@@ -139,7 +139,7 @@ boton_calcular.addEventListener("click", function (evento) {
             });
             const content = await rawResponse.json();
             var textOuput = "";
-            parseInt(content.prediction) == 1 ? textOuput = "Covid detectado!" : textOuput = "Covid NO detectado!";
+            parseInt(content.prediction) == 1 ? textOuput = "Resultado Positivo" : textOuput = "Resultado Negativo";
             document.getElementById("textResult").innerText = textOuput;
         })();
     }
